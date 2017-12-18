@@ -47,7 +47,7 @@ def max_pool_2x2(x):
 xs = tf.placeholder(tf.float32, [None, 784])
 ys = tf.placeholder(tf.float32, [None, 10])
 keep_prob = tf.placeholder(tf.float32)
-x_image = tf.reshape(xs, [-1, 28, 28, 1])
+x_image = tf.reshape(xs, [-1, 28, 28, 1])   #将784行数据转换为28行28列1层
 # print(x_image.shape)  # [n_samples, 28, 28, 1]
 
 ##conv1 layer##
